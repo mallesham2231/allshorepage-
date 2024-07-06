@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>alshoretechnologies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   <style>
+    .overlay {
+   
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    padding: 110px 0;
+}
+.section-bg {
+    background-size: cover;
+    position: relative;
+    background-position: left;
+    z-index: 0;
+    padding: 0;
+    min-height: auto;
+    overflow: hidden;
+}
+.contact-form {
+    position: relative;
+    padding: 45px 0 45px 60px;
+}
+
+.contact-form:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 10px 40px 40px rgba(0,0,0,.2);
+    pointer-events: none;
+    right: auto;
+    width: 100vw;
+}
+.particles-js-canvas-el {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.contact-form input {
+    border: 0;
+    background: transparent;
+
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 11px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0;
+   
+    transition: .3s ease-in-out;
+    border: 2px solid transparent;
+    border-bottom-color: rgba(0,0,0,.1);
+}
+
+.contact-form textarea {
+    border: 0;
+    background: transparent;
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 11px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0;
+ 
+    transition: .3s ease-in-out;
+    border: 2px solid transparent;
+    border-bottom-color: rgba(0,0,0,.1);
+}
+.contact-form input::placeholder {
+  color:#222;
+}
+.contact-form textarea::placeholder {
+  color:#222;
+
+}
+.contact-form input {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 55px;
+}
+.contact-form input:hover, .contact-form input:focus{
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid transparent;
+    border-bottom-color: rgb(254, 132, 111);
+
+}
+.contact-form textarea:hover, .contact-form textarea:focus{
+  background: transparent; 
+    outline: none;
+  box-shadow: none;
+     border: 2px solid transparent;
+    border-bottom-color: rgb(254, 132, 111);
+
+}
+
+
+.taso-btn {
+    background-color: #fff;
+    margin: 25px 0;
+    color: #214dcb;
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.32);
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.17);
+}
+.contact-info {
+    padding: 0 30px 0px 0;
+}
+
+h2.contact-title {
+    font-size: 35px;
+    font-weight: 600;
+    color:#8fcad5;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    color: #ca1616;
+}
+.form-group{
+    position: relative;
+}
+
+i{
+    position: relative;
+}
+ul.contact-info {
+    margin-top: 30px;
+}
+
+ul.contact-info li {
+    margin-bottom: 22px;
+}
+
+
+
+ul.contact-info span {
+    font-size: 20px;
+    line-height: 26px;
+}
+ul.contact-info li {
+    display: flex;
+    width: 100%;
+}
+
+.info-left {
+    width: 10%;
+}
+
+
+
+
+.info-left i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+    position: relative;
+    z-index: 100;
+}
+
+.info-right h4 {
+    color:black;
+    font-size: 16px;
+    font-weight: 300;
+}
+.contact-page .info-left i{
+color: #FE846F;
+}
+.btn :hover a{
+    color: black;
+}
+.btn {
+    position: relative;
+display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 30px 10px;
+    font-size: 17px;
+    line-height: 28px;
+    border: 0px;
+    border-radius: 10px;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.btn-big {
+    color: #ffffff;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(45, 45, 45, 0.47843137254901963);
+    box-shadow: 2px 5px 10px 0px rgba(45, 45, 45, 0.19);
+    color: #fff ;
+    margin-right: 20px;
+    background: #FE846F;
+    transition: .2s;
+    border: 2px solid #FE846F;
+    margin-top: 50px;
+}
+
+.btn-big:hover button{
+    color: black;
+}
+
+@media only screen and (max-width: 767px) {
+.contact-form {
+    padding: 30px;
+}
+.contact-form:before {
+    width: 100%;
+}
+
+}
+   </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container ms-5">
+            <a class="navbar-brand" href="#"><img src="assests/images/allshorelogo_1.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body me-5">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-5">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" id="dropdown-content">
+                                <li><a class="dropdown-item" href="assests/services/product.html">Product
+                                        Engineering</a></li>
+                                <li><a class="dropdown-item" href="assests/services/cloudsanddevops.html">Clouds and
+                                        Devops</a></li>
+                                <li><a class="dropdown-item" href="assests/services/technologystaff.html">Technology
+                                        Staffing</a></li>
+                                <li><a class="dropdown-item" href="assests/services/crmimplementation.html">CRM
+                                        Implementation / Custom Development</a></li>
+
+                                <li><a class="dropdown-item" href="assests/services/digitaltransform.html">Digital
+                                        Transformation using Atlassian</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+   
+    <section class="section-bg" 
+        data-scroll-index="7">
+        <div class="overlay pt-100 pb-100 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="contact-info">
+
+                            <h2 class="contact-title">Have Any Questions?</h2>
+                            <p></p>
+                            <ul class="contact-info">
+                                <li>
+                                    <div class="info-left">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="info-right">
+                                        <h4> +91 81210 16282</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-left">
+                                        <i class="fas fa-at"></i>
+                                    </div>
+                                    <div class="info-right">
+                                        <h4> recruit@allshoretech.com</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-left">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="info-right">
+                                        <h4> 85 Swanson Rd, Suite 320E,
+                                            Boxborough, MA 01719,USA.</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-left" style="padding-right: 15px;">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="info-right">
+                                        <h4> 505, 5th Floor, Gowra Palladium,
+                                            Raidurg, Hyderabad, Telangana,500081 India</h4>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="contact-form">
+                            <!--Contact Form-->
+                            <form id='contact-form' method='POST'><input type='hidden' name='form-name'
+                                    value='contactForm' />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" id="first-name"
+                                                placeholder="Enter Your Name *" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" id="email"
+                                                placeholder="Enter Your Email *" required="required">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea rows="4" name="message" class="form-control" id="description"
+                                                placeholder="Enter Your Message *" required="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        
+                                        <button class="btn-big btn btn-bg">
+                                            Send Us <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer id="footer" style="margin-top: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" id="logodiv">
+
+                    <div class="col-md-12">
+                        <img src="assests/images/allshorelogo_1.png" alt="" style="width: 80%;">
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="col-md-11">
+                        <h5>Links</h5>
+                        <div id="bottomunderlineforfooter"></div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="col-md-12">
+                        <h5>Services</h5>
+                        <div id="bottomunderlineforfooter"></div>
+                        <ul>
+                            <li><a href="assests/services/cloudsanddevops.html">Clouds and Devops</a></li>
+                            <li><a href="assests/services/technologystaff.html">Technology Staffing</a></li>
+                            <li><a href="assests/services/product.html">Product Engineering</a></li>
+                            <li><a href="assests/services/crmimplementation.html">CRM Implementation / Custom
+                                    Development</a></li>
+
+                            <li><a href="assests/services/digitaltransform.html">Digital Transformation using
+                                    Atlassian</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="col-md-12">
+                        <h5>Contact Us</h5>
+                        <div id="bottomunderlineforfooter"></div>
+                        <div id="conatactdetails">
+                            <p> call us for a quick chat:</p>
+                            <p>+91 81210 16282</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="copyright" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="co-md-12">
+                    <p style="text-align: center;" class="text-light">Copyrights 2023 <span id="copyrightname">Allshore
+                            Technologies Private Limited</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
